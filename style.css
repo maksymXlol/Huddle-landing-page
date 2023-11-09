@@ -1,9 +1,10 @@
 :root {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
   --Very-Pale-Cyan: hsl(193, 100%, 96%);
   --Very-Dark-Cyan: hsl(192, 100%, 9%);
   --Grayish-Blue: hsl(208, 11%, 55%);
+  --Pink: hsl(322, 100%, 66%);
+  font-size: 1rem;
 }
 
 * {
@@ -11,6 +12,21 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*
+====================
+ HEADER
+====================
+*/
 .menu {
   margin-inline: 5.5rem;
   display: flex;
@@ -20,6 +36,9 @@
 .header {
   padding-top: 1.5rem;
   background-image: url(./images/bg-hero-desktop.svg);
+  background-color: hsl(191, 89%, 96%);
+  background-size: cover;
+  padding-bottom: 63px;
 }
 
 .menu__btn {
@@ -30,6 +49,43 @@
   padding-inline: 4rem;
   font-weight: 700;
   box-shadow: 0px 0px 10px 0px var(--Grayish-Blue);
+}
+
+.content {
+  display: flex;
+  gap: 80px;
+  margin-inline: 5.5rem;
+  margin-top: 63px;
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__info--header {
+  font-size: 2.5rem;
+  color: var(--Very-Dark-Cyan);
+}
+
+.content__info--text {
+  color: var(--Very-Dark-Cyan);
   font-size: 1rem;
-  /* margin-left: 56rem; */
+  line-height: 1.5;
+  margin-block: 25px;
+}
+
+.content__info--btn {
+  background-color: var(--Pink);
+  border: 0;
+  border-radius: 5rem;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+  font-weight: 400;
+  box-shadow: 0px 0px 10px 0px var(--Grayish-Blue);
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: white;
+  width: fit-content;
 }
